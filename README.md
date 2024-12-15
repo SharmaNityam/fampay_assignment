@@ -63,7 +63,7 @@ lib/
 ├── domain/                     # Business logic layer
 │   ├── big_card_cubit/         # State management for big cards
 │   │   └── big_card_cubit.dart
-│   ├── card_bloc/              # BLoC for card management (if used)
+│   ├── card_bloc/              # BLoC for card management
 │   └── model/                  # Model classes
 │       ├── card_model.dart
 │       ├── hc1_model.dart
@@ -90,23 +90,17 @@ lib/
 
 ## How to Use
 
-1. **Integration:** Add the `ContextualCardsContainer` widget to any screen or widget in your project.
-    ```dart
-    import 'package:your_project/presentation/card_view.dart';
+1. **Setup the project:** Follow the installation steps to ensure the app runs successfully on an emulator or physical device.
 
-    class YourScreen extends StatelessWidget {
-      @override
-      Widget build(BuildContext context) {
-        return Scaffold(
-          body: ContextualCardsContainer(),
-        );
-      }
-    }
-    ```
+2. **Run the app:** Use the following commands:
+   ```bash
+   flutter pub get
+   flutter run
+   ```
 
-2. **Dynamic API Response:** The container will fetch and display cards based on the API response.
+3. **Dynamic API Response:** The container will fetch and display cards based on the API response.
 
-3. **Custom Actions:**
+4. **Custom Actions:**
    - Long press on `HC3` cards for additional actions.
    - Tap on CTAs to trigger deep links.
 
